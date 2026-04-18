@@ -1,0 +1,200 @@
+body{
+    background-image: radial-gradient( circle 1588px at -27.3% 144%,  rgba(255,22,22,1) 0%, rgba(0,0,0,1) 43.4%, rgba(0,0,0,1) 65.8%, rgba(255,22,22,1) 100.2% );
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 700px;
+    height: 500px;
+    border-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    margin-top: 40px;
+    position: relative;
+    box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.75);
+}
+.container img{
+    width: 60%;
+    height: 500px;
+    border-radius: 0px;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container .text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.container .subtext {
+  position: absolute;
+  bottom: 260px;
+  left: 100px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+/*    image , inside the image    */
+.box .sign .word{
+    position: absolute;
+    right: 150px;
+    top: 5%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: 1px;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.box .sign .Name{
+    position: absolute;
+    right: 15px;
+    top: 20%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border: none;
+    border-bottom: 2px solid black;
+    background: rgba(255, 255, 255, 0);
+}
+/*.box .sign .Name::placeholder{
+    border-bottom: 2px solid black;
+    border-top: 0px whitesmoke;
+
+}*/
+.box .sign .Name:focus{
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 4;
+    font-weight: bold;
+
+}
+
+      /*Email */
+
+.box .sign .Email{
+    position: absolute;
+    right: 15px;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border: none;
+    border-bottom: 2px solid black;
+    background: rgba(255, 255, 255, 0);
+}
+/*.box .sign .Name::placeholder{
+    border-bottom: 2px solid black;
+    border-top: 0px whitesmoke;
+
+}*/
+.box .sign .Email:focus{
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 4;
+    font-weight: bold;
+
+}
+/* Password */
+
+.box .sign .Password{
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border: none;
+    border-bottom: 2px solid black;
+    background: rgba(255, 255, 255, 0);
+}
+/*.box .sign .Name::placeholder{
+    border-bottom: 2px solid black;
+    border-top: 0px whitesmoke;
+
+}*/
+.box .sign .Password:focus{
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 4;
+    font-weight: bold;
+}
+/* if have an account */
+.box .account{
+    position: absolute;
+    right: 110px;
+    top: 82%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+/* Log In Button */
+.box .log{
+    position: absolute;
+    right: 40px;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 10px 20px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(152,35,35,1) 0%, rgba(225,64,64,1) 100.2% );
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 2px 5px rgba(0,0,0,0.3);
+}
+.box .log .arrow{
+    margin-left: 90px;
+}
+.box .log:hover{
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(1, 1, 0, 30deg);
+}
+
+.box .terms{
+    position: absolute;
+    right: 155px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: rgb(17, 16, 16);
+    cursor: text;
+    background-color: transparent;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-width: 10px;
+    overflow-y: auto;    /* scroll if text is too long */
+    line-height: 1.5;
+}
